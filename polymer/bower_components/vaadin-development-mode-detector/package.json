@@ -1,0 +1,14 @@
+{
+  "name": "@vaadin/vaadin-development-mode-detector",
+  "version": "2.0.5",
+  "description": "Element for detecting that an application using Vaadin Elements is running in development mode",
+  "repository": "vaadin/vaadin-development-mode-detector",
+  "author": "Vaadin Ltd",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "start": "polymer serve -H 0.0.0.0",
+    "build": "polymer build  --preset es5-bundled --entrypoint test/index.html",
+    "start:prod": "npm run build && polymer serve build/es5-bundled -H 0.0.0.0"
+  }
+}
